@@ -20,8 +20,7 @@ public class Money {
 
     @Override
     public boolean equals(Object anObject) {
-        if (anObject instanceof Money) {
-            Money money = (Money) anObject;
+        if (anObject instanceof Money money) {
             return getCurrency().equals(money.getCurrency())
                     && getAmount() == money.getAmount();
         }
